@@ -1,0 +1,6 @@
+1.  qq 腾讯QQ                            2. wechat 微信                       3. telegram-desktop 电报Telegram
+4.  neteasemusic 网易云音乐              5. iina 视频播放器                   6. typora Markdown编辑器
+7.  google-chrome 谷歌浏览器             8. firefox 火狐浏览器                9. alfred 软件启动工具
+10. iterm2 终端模拟器                   11. wireshark 抓包工具Wireshark      12. teamviewer 远程控制工具
+13. intellij-idea JVM平台语言IDE        14. pycharm Python开发工具           15. clion C以及C++开发工具
+16. datagrip 数据库操作的瑞士军刀       17. webstorm 前端开发利器            18. shadowsocksx-ng 图形化的Shadowsocks客户端

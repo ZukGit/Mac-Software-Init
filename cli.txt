@@ -1,0 +1,3 @@
+1. wget 命令行下载工具         2. curl URL处理工具     3. mysql MySQL数据库
+4. aria2 命令行下载工具        5. tree 展示树形目录    6. vim 编辑器之神Vim
+7. node.js 网络应用构建框架    8. npm node包管理工具   9. shadowsocks-libev Shadowsocks命令行客户端
