@@ -11,3 +11,4 @@
 31. winzip 压缩解压软件                 32. dash  编程语言API文档               33. foxmail  邮件客户端
 34. itools 苹果设备助手                 35. understand 程序分析软件             36. easyfind 查找文件工具
 37. youdaodict 有道词典               38. find-any-file 文件搜索               39. github  git桌面
+40. cleanmymac 空间磁盘管理
