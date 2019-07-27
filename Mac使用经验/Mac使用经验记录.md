@@ -21,6 +21,7 @@ export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 export PS1='%d$'
 alias cls='clear'
+alias cdd='cd $HOME/Desktop/'
 export PATH="$HOME/Desktop/zbin/mac_zbin:$PATH"
 clear
 
