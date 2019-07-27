@@ -3,4 +3,11 @@
 7.  google-chrome 谷歌浏览器             8. firefox 火狐浏览器                9. alfred 软件启动工具
 10. iterm2 终端模拟器                   11. wireshark 抓包工具Wireshark      12. teamviewer 远程控制工具
 13. intellij-idea JVM平台语言IDE        14. pycharm Python开发工具           15. clion C以及C++开发工具
-16. datagrip 数据库操作的瑞士军刀       17. webstorm 前端开发利器            18. shadowsocksx-ng 图形化的Shadowsocks客户端
+16. datagrip 数据库操作的瑞士军刀         17. webstorm 前端开发利器             18. shadowsocksx-ng 图形化的Shadowsocks客户端
+19. android-sdk 安卓SDK                20. android-platform-tools 安卓开发平台  21. android-studio 安卓Studio
+22. qqbrowser   QQ浏览器               23. baidunetdisk 百度网盘              24. macdown  markdown工具
+25. tencent-lemon 腾讯乐檬管理卫士       26. baiduinput 百度输入法              27. wpsoffice	 金山WPS
+28. google-earth-pro 谷歌地球          29. java  openJDK-Java开发             30. jd-gui  反编译class文件查看工具
+31. winzip 压缩解压软件                 32. dash  编程语言API文档               33. foxmail  邮件客户端
+34. itools 苹果设备助手                 35. understand 程序分析软件             36. easyfind 查找文件工具
+37. youdaodict 有道词典               38. find-any-file 文件搜索    
