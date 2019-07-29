@@ -77,11 +77,6 @@ printf '\x31\xC0\xFF\xC0\xC3\x90' | dd seek=$((0x76DC40)) conv=notrunc bs=1 of=/
 ```
 
 
-
-
-
-
-
-
+test
 
 
