@@ -185,6 +185,56 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 ```
 
+
+### 键盘Map映射问题
+```
+检查映射状态:
+hidutil property --get "UserKeyMapping"
+
+
+映射代码:
+hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000052,"HIDKeyboardModifierMappingDst":0x700000058}]}'
+
+hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":当前原始按键编号,"HIDKeyboardModifierMappingDst":映射目标按键标号}]}'
+
+
+Mac键盘映射切换映射索引表:
+https://developer.apple.com/library/archive/technotes/tn2450/_index.html
+
+https://www.jianshu.com/p/4dc8cb27ed5e
+
+https://github.com/bestswifter/macbootstrap/blob/master/onlogin.sh
+
+https://blog.csdn.net/weixin_33860147/article/details/91377595
+
+```
+
+### Mac开机执行任务
+```
+
+Mac开机任务： ~/Library/LaunchAgents/.plist
+
+~/Library/LaunchAgents/.plist + shell脚本 开机启动任务 自动执行
+
+
+~/Library/LaunchAgents   针对当前用户的启动项目录
+/Library/LaunchAgents     所有用户(管理员权限）
+/System/Library/LaunchAgents  系统启动项
+
+
+
+launchctl load 启动plist运行
+launchctl unload  卸载
+launchctl list 查看所有启动任务
+launchctl start 开始plist任务
+launchctl error code 查看code对应的错误解释
+
+
+brew cask install launchcontrol
+```
+
+
+
 ## 触控板
 
 ### 触控板轻触点击
