@@ -149,7 +149,10 @@ Shift + Command + 3   // 全屏截屏
 
 Shift + Command + 4   // 手动截屏
 
-defaults write com.apple.screencapture location ~/Desktop      // 把屏幕截图保存的位置   shift+command+3  或者 shift+command+4 截图
+defaults write com.apple.screencapture location ~/Desktop      // 把屏幕截图保存的位置   shift+command+3  或者 
+defaults write com.apple.screencapture location ~/Desktop/xxxx
+
+shift+command+4 截图
 defaults write com.apple.screencapture type jpg               // 设置截图格式为 jpg
 defaults write com.apple.screencapture type png               // 设置截图格式为 png
 
@@ -260,6 +263,58 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool t
 
 ```
 
+## .DS_Store文件问题
+
+```
+.DS_Store(英文全称 Desktop Services Store)是一种由苹果公司的Mac OS X操作系统所创造的隐藏文件，目的在于存贮目录的自定义属性，例如文件们的图标位置或者是背景色的选择。
+相当于 Windows 下的 desktop.ini。
+```
+
+
+
+### 删除 git项目的.DS_Store
+
+```
+如果你的项目中还没有自动生成的 .DS_Store 文件，那么直接将 .DS_Store 加入到 .gitignore 文件就可以了。如果你的项目中已经存在 .DS_Store 文件，那就需要先从项目中将其删除，再将它加入到 .gitignore。如下
+
+```
+
+
+
+```shell
+删除项目中的所有.DS_Store。这会跳过不在项目中的 .DS_Store
+1.find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+将 .DS_Store 加入到 .gitignore
+2.echo .DS_Store >> ~/.gitignore
+更新项目
+3.git add --all
+4.git commit -m '.DS_Store banished!'
+```
+
+
+
+### 删除磁盘上的 .DS_Store
+
+```
+##  删除磁盘上的 .DS_Store，可以使用下面的命令来删除当前目录及其子目录下的所有.DS_Store 文件:
+find . -name '*.DS_Store' -type f -delete
+
+```
+
+
+
+### Mac系统上 禁止||启用 .DS_Store 文件生成
+
+```
+#### 禁止.DS_Store 文件生成
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
+
+#### 启用.DS_Store 文件生成
+defaults delete com.apple.desktopservices DSDontWriteNetworkStores
+
+```
+
+
 
 # 实用问题
 
@@ -333,7 +388,7 @@ printf '\x31\xC0\xFF\xC0\xC3\x90' | dd seek=$((0x76DC40)) conv=notrunc bs=1 of=/
 ```
 使用MacDown作为 Mac的 Markdown编辑器
 
-
+使用 Typora 作为 Markdown的编辑器  界面友好
 
 
 ```
